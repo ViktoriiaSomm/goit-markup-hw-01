@@ -165,11 +165,11 @@ ul {
 }
 .button :hover,
 :focus {
-  color: #ffffff;
   background-color: #2196f3;
+  color: #ffffff;
 }
 
-.button.primary {
+.button-primary {
   color: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
@@ -179,7 +179,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-.button.primary :hover,
+.button-primary :hover,
 :focus {
   background-color: #188ce8;
 }
