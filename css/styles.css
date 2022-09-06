@@ -163,8 +163,8 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-.button :hover,
-:focus {
+.button:hover,
+ .button:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -179,8 +179,9 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-.button-primary :hover,
-:focus {
+.button-primary:hover, 
+.button-primary:focus{
+    color: #ffffff;
   background-color: #188ce8;
 }
 
