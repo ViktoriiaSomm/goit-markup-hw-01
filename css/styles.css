@@ -140,23 +140,23 @@ ul {
   font-size: 16px;
   line-height: 1.19;
 }
- .title-features {
+.title-features {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-decoration: none;
 }
- .features-text {
+.features-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
- }
+}
 
- .link-portfolio {
+.link-portfolio {
   text-decoration: none;
- }
-  
+}
+
 /*button*/
 
 .button {
@@ -169,11 +169,11 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-  .button:hover, 
-  .button:focus {
-      background-color: var(--accent-color);
-      color: var(--main-background-color);
-    }
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+}
 
 .button-primary {
   color: var(--main-background-color);
@@ -189,7 +189,6 @@ ul {
 .button-primary:focus {
   background-color: #188ce8;
 }
-
 
 /*footer*/
 .footer {
