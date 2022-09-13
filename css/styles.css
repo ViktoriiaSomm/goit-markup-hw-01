@@ -225,12 +225,14 @@ img {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .text-names {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 30px;
+  margin-top: 0;
   
 }
 .text-section {
@@ -260,9 +262,8 @@ width: 270px;
 }
 
 .section-portfolio {
-
-  padding-bottom: 94px;
-  padding-top: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .list-content {
@@ -300,10 +301,7 @@ width: 270px;
 
 /*portfolio*/
 
-.section-portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+
 
 .features-text {
   color: var(--primary-text-color);
@@ -332,19 +330,27 @@ margin: 0;
   
 }
 
-.flex-element {
-border: none;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-
-}
 
 .border {
     border-left: 1px solid var(--border-color);
-    border-right: var(--border-color);
-    border-bottom: var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
       padding: 20px 24px;
     
          
+}
+.photo {
+  box-shadow:  0px 1px 1px rgb(0 0 0 / 12%),
+  0px 4px 4px rgb(0 0 0 / 6%),
+  1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+
+
+
+
+
+
 }
 
 
@@ -370,9 +376,11 @@ border: none;
   margin-left: 8px;
  }
 .button:hover {
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
-  0px 1px 2px rgba(0, 0, 0, 0.08);
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+box-shadow:
+  0px 3px 1px rgb(0 0 0 / 10%),
+  0px 1px 2px rgb(0 0 0 / 8%),
+  0px 2px 2px rgb(0 0 0 / 12%);
+
 }
 
 .buttons {
@@ -385,9 +393,7 @@ ul.buttons {
     margin-bottom: 50px;
 }
 
-.button:first-child {
-  padding: 6px 25px;
-}
+
 
 .button:hover,
 .button:focus {
