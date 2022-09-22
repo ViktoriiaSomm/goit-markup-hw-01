@@ -153,10 +153,9 @@ img {
 .contacts .link {
   color: var(--pimary-text-color);
 }
-
-.icon-contact {
-  display: flex;
+.item-contacts {
   margin-right: 30px;
+
 }
 .icon-header-mail {
 margin-right: 10px;
@@ -186,6 +185,7 @@ padding-top: 200px;
     url(../images/dim5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -270,9 +270,6 @@ padding-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-padding-right: 32px; 
-padding-left: 32px;
-padding-bottom: 30px;
   margin: 0;
   gap: 10px;
 }
@@ -297,59 +294,60 @@ width: 44px;
 height: 44px;
 border-radius: 50%;
 padding: 0;
+fill: var(--secondary-border-color);
 }
 
 .icon-link:hover, .icon-link:focus {
   background-color: var(--accent-color);
+  fill: var(--main-background-color);
 }
 
 .social-icon {
-  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
-.social-icon:hover, .social-icon:focus {
-  fill: var(--main-background-color);
+
+
+.constant-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
  .head-clients {
   color: var(--title-text-color);
     margin-bottom: 50px;
     margin-top: 0;
-    padding-top: 94px;
       font-weight: 700;
       font-size: 36px;
       line-height: 1.17;
       text-align: center;
       letter-spacing: 0.03em;
  }
+
  .clients-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
   gap: 30px;
  }
-.clients-cards {
-    display: flex;
-      padding: 0;
-      border: none;
-      width: 170px;
-      height: 92px;
-      border: 1px solid var(--secondary-border-color);
-      border-radius: 4px;
-      justify-content: center;
-      align-items: center;
-}
+
 .clients-cards:hover, .clients-cards:focus {
 border-color: var(--accent-color);
 }
 .link-clients {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--secondary-border-color);
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--secondary-border-color);
+    fill: var(--secondary-border-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .link-clients:hover, .link-clients:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -405,7 +403,6 @@ width: 270px;
 height: 120px;
 background-color: var(--secondary-background-color);
 border-radius: 4px;
-padding: 25px 100px;
 margin-bottom: 30px;
  }
 
@@ -635,11 +632,17 @@ ul.buttons {
 
 .footer-social-list {
   display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 .social-head{
   margin-top: 0;
   margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
 line-height: 1.14;
+text-transform: uppercase;
 color: var(--main-background-color);}
 
 .link-icon-footer {
@@ -648,10 +651,10 @@ border-radius: 50%;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--main-background-color);
   padding: 0;
   width: 44px;
   height: 44px;
-  margin-right:  10px;
 }
 
 .link-icon-footer:hover, 
@@ -662,10 +665,5 @@ border-radius: 50%;
 display: flex;
 width: 20px;
 height: 20px;
-fill: var(--secondary-border-color);
 }
 
-.icon-footer:hover, 
-.icon-footer:focus {
-fill: var(--main-background-color);
-}
