@@ -22,6 +22,7 @@ body {
 }
 a {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2 {
@@ -92,6 +93,7 @@ img {
   padding-left: 0;
 }
 .item {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -115,6 +117,16 @@ img {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -1px;
 }
 
 .page-header .main-nav {
@@ -353,11 +365,31 @@ img {
 .section-second {
   padding-bottom: 94px;
 }
-
+.images-section {
+  position: relative;
+}
 .images-section:not(:last-child) {
   margin-right: 30px;
 }
 
+.images-overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+}
+.images-headers {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
 .section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -413,7 +445,10 @@ img {
 }
 
 /*portfolio*/
-
+.cards-description {
+  position: relative;
+  overflow: hidden;
+}
 .features-text {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -434,6 +469,23 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+.text-overlay {
+  position: absolute;
+  top: 0;
+  padding: 63px 24px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--main-background-color);
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .border {
   border-left: 1px solid var(--border-color);
@@ -448,11 +500,16 @@ img {
 
 .portfolio-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 3px 3px rgb(0 0 0 / 25%), 0px 3px 3px rgb(0 0 0 / 25%),
     0px 1px 2px rgb(0 0 0 / 12%);
+}
+.portfolio-link:hover .text-overlay,
+.portfolio-link:focus .text-overlay {
+  transform: translateY(0);
 }
 
 /*button*/
@@ -469,7 +526,11 @@ img {
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button-portfolio:not(:first-child) {
   margin-left: 8px;
 }
@@ -498,7 +559,7 @@ ul.buttons {
   color: var(--main-background-color);
   cursor: pointer;
   background-color: var(--accent-color);
-  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -507,11 +568,13 @@ ul.buttons {
   border-radius: 4px;
   border: none;
   min-width: 216px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--button-accent-hero);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*footer*/
@@ -611,4 +674,44 @@ ul.buttons {
   display: flex;
   width: 20px;
   height: 20px;
+}
+
+/*modal*/
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--main-background-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
