@@ -725,7 +725,7 @@ ul.buttons {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .subscription:focus {
- border-color: var(--accent-color) ;
+  border-color: var(--accent-color);
 }
 .input-svg {
   position: absolute;
@@ -891,16 +891,16 @@ ul.buttons {
 }
 
 .checkbox {
-    display: flex;
-    justify-content: center;
-      margin-top: 20px;
-      margin-bottom: 30px;   
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.hidden{
+.hidden {
   appearance: none;
   opacity: 0;
 }
-.label-submit{
+.label-submit {
   display: flex;
   align-items: center;
 }
@@ -909,32 +909,29 @@ ul.buttons {
   margin: 0;
 }
 
-.input-checkbox:checked + .modal-icons{
-background-color: var(--accent-color);
-
+.input-checkbox:checked + .modal-icons {
+  background-color: var(--accent-color);
 }
 
-.input-checkbox:focus + .modal-icons ,
-.input-checkbox:hover + .modal-icons{
+.input-checkbox:focus + .modal-icons,
+.input-checkbox:hover + .modal-icons {
   border-color: var(--accent-color);
 }
 
 .modal-icons {
   width: 16px;
   height: 15px;
-        margin-right: 7px;
-        display: flex;
-        align-items: center;
-        border: 2px solid var(--title-text-color);
-          border-radius: 2px;
-        
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
 }
 .submit-field {
-  
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .form-link {
