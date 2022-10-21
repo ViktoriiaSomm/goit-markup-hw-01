@@ -265,7 +265,7 @@
             <a href="" class="link-clients" >
               <svg width="106" height="60">
                 <use xlink:href="./images/icons.svg#icon-Logo1"></use>
-              </svg></a>
+              </svg>
             </a>
           </li>
             <li>
@@ -285,7 +285,7 @@
                     </svg></a>
                 </li>
                   <li>
-                    <a href=""class="link-clients" >
+                    <a href="" class="link-clients" >
                       <svg width="106" height="60">
                         <use xlink:href="./images/icons.svg#icon-Logo5"></use>
                       </svg></a>
@@ -338,7 +338,7 @@
             </a>
           </li>
           <li>
-            <a href=""class="link-icon-footer" >
+            <a href="" class="link-icon-footer" >
               <svg class="icon-footer" width="20" height="20">
                 <use xlink:href="./images/icons.svg#icon-twitter-footer"></use>
               </svg>
@@ -360,6 +360,19 @@
           </li>
         </ul>
         </div>
+      <form>
+        <p class="slogan">Підпишіться на розсилку</p>
+        <div class="footer-form">
+        <label>
+        <input class="subscription" type="email" name="email" placeholder="E-mail"/>
+        </label>
+         <button class="button-footer" type="submit">Підписатися
+      <svg class="input-svg" width="24" height="24">
+        <use xlink:href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+      </button>
+      </div>
+      </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -369,6 +382,44 @@
             <use href="./images/icons.svg#icon-icon-close"></use>
           </svg>
         </button>
+        <form class="form">
+          <h1 class="form-head" >Залиште свої дані, ми вам передзвонимо</h1>
+          <div class="form-field"><label class="form-label" for="name">Ім'я</label>
+         <div class="input-modal"> <input class="form-input" type="text" name="user-name" id="name" autofocus />
+          <svg class="form-icons" width="12" height="12">
+            <use xlink:href="./images/icons.svg#icon-person-form"></use>
+          </svg></div>
+        </div>
+         <div class="form-field"><label class="form-label" for="tel">Телефон</label>
+        <div class="input-modal"><input class="form-input" type="tel" name="tel" id="tel" />
+        <svg class="form-icons" width="13" height="13">
+          <use xlink:href="./images/icons.svg#icon-phone-form"></use>
+        </svg>
+         </div>
+        </div>
+       <div class="form-field"><label class="form-label" for="email">Пошта</label>
+      <div class="input-modal"><input class="form-input" type="email" name="email" id="email" />
+       <svg class="form-icons" width="15" height="12">
+          <use xlink:href="./images/icons.svg#icon-email-form"></use>
+        </svg>
+       </div>
+       </div>
+        <div class="form-field"><label class="form-label" for="comment">Коментар</label>
+        <textarea class="comment" name="comment" id="comment" placeholder="Введіть текст"></textarea></div>
+       <div class="checkbox">
+        <label class="label-submit">
+        <input class="input-checkbox hidden" type="checkbox" name="accept" value="accept"  checked />
+        <span class="modal-icons"><svg width="16" height="15">
+          <use href="./images/icons.svg#icon-sign"></use>
+        </svg>
+        </span>
+       <span class="submit-field"> Погоджуюся з розсилкою та приймаю <a href="" class="form-link">Умови
+            договору</a>
+       </span>
+          </label>
+       </div>
+       <div class="button-submit"><button class="form-button" type="submit">Відправити</button></div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
