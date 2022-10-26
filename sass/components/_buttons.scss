@@ -10,8 +10,8 @@
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
-  transition: color, background-color,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-main, background-color $transition-main,
+    box-shadow $transition-main;
 }
 
 .button-portfolio:not(:first-child) {
@@ -52,7 +52,7 @@ ul.buttons {
   border-radius: 4px;
   border: none;
   min-width: 216px;
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-main, box-shadow $transition-main;
 
   &:hover,
   :focus {
@@ -72,7 +72,7 @@ ul.buttons {
   letter-spacing: 0.06em;
   background-color: $accent-color;
   color: $main-background-color;
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-main, box-shadow $transition-main;
 }
 
 .button-footer:hover,
@@ -92,7 +92,7 @@ ul.buttons {
   letter-spacing: 0.06em;
   color: $main-background-color;
   background-color: $button-accent-hero;
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-main, box-shadow $transition-main;
 }
 
 .form-button:hover,
